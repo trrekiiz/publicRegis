@@ -58,4 +58,5 @@ Temporary Items
 /build/
 
 #Java
-nbproject/
+/nbproject/private/private.xml
+

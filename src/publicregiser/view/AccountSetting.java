@@ -31,7 +31,7 @@ public class AccountSetting extends javax.swing.JFrame {
         Serch = new javax.swing.JLabel();
         serchField = new javax.swing.JTextField();
         serchButton = new javax.swing.JButton();
-        jTextField2 = new javax.swing.JTextField();
+        dataFeild = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Account Setting");
@@ -56,11 +56,10 @@ public class AccountSetting extends javax.swing.JFrame {
             }
         });
 
-        jTextField2.setText("jTextField2");
-        jTextField2.setMinimumSize(new java.awt.Dimension(1024, 768));
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        dataFeild.setMinimumSize(new java.awt.Dimension(1024, 768));
+        dataFeild.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                dataFeildActionPerformed(evt);
             }
         });
 
@@ -71,7 +70,7 @@ public class AccountSetting extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(dataFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(Serch, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createSequentialGroup()
@@ -92,7 +91,7 @@ public class AccountSetting extends javax.swing.JFrame {
                     .addComponent(serchField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(serchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(dataFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 552, Short.MAX_VALUE))
         );
 
@@ -107,9 +106,9 @@ public class AccountSetting extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_serchButtonActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void dataFeildActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dataFeildActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_dataFeildActionPerformed
 
     /**
      * @param args the command line arguments
@@ -149,7 +148,7 @@ public class AccountSetting extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Logo;
     private javax.swing.JLabel Serch;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField dataFeild;
     private javax.swing.JButton serchButton;
     private javax.swing.JTextField serchField;
     // End of variables declaration//GEN-END:variables

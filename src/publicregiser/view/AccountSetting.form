@@ -34,11 +34,7 @@
               <EmptySpace min="-2" pref="295" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="dataFeild" min="-2" pref="291" max="-2" attributes="0"/>
-                  <Group type="102" attributes="0">
-                      <Component id="serchField" min="-2" pref="172" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="serchButton" min="-2" pref="58" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="serchField" min="-2" pref="172" max="-2" attributes="0"/>
                   <Component id="Serch" min="-2" max="-2" attributes="0"/>
                   <Component id="Logo" alignment="0" min="-2" pref="313" max="-2" attributes="0"/>
               </Group>
@@ -59,10 +55,7 @@
               <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
               <Component id="Serch" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="serchField" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="serchButton" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
-              </Group>
+              <Component id="serchField" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="dataFeild" min="-2" pref="96" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -89,14 +82,6 @@
     <Component class="javax.swing.JTextField" name="serchField">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="serchFieldActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="serchButton">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="OK"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="serchButtonActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="dataFeild">

@@ -5,6 +5,9 @@
  */
 package publicregiser.view;
 
+import java.awt.Toolkit;
+import sun.awt.image.ToolkitImage;
+
 /**
  *
  * @author newso
@@ -16,6 +19,7 @@ public class AccountSetting extends javax.swing.JFrame {
      */
     public AccountSetting() {
         initComponents();
+        setIcon();
     }
 
     /**
@@ -30,7 +34,6 @@ public class AccountSetting extends javax.swing.JFrame {
         Logo = new javax.swing.JLabel();
         Serch = new javax.swing.JLabel();
         serchField = new javax.swing.JTextField();
-        serchButton = new javax.swing.JButton();
         dataFeild = new javax.swing.JTextField();
         editProfile = new javax.swing.JLabel();
 
@@ -47,13 +50,6 @@ public class AccountSetting extends javax.swing.JFrame {
         serchField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 serchFieldActionPerformed(evt);
-            }
-        });
-
-        serchButton.setText("OK");
-        serchButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                serchButtonActionPerformed(evt);
             }
         });
 
@@ -75,10 +71,7 @@ public class AccountSetting extends javax.swing.JFrame {
                 .addGap(295, 295, 295)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(dataFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(serchField, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(serchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(serchField, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Serch)
                     .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(416, Short.MAX_VALUE))
@@ -95,9 +88,7 @@ public class AccountSetting extends javax.swing.JFrame {
                 .addGap(1, 1, 1)
                 .addComponent(Serch)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(serchField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(serchButton, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(serchField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(dataFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -111,10 +102,6 @@ public class AccountSetting extends javax.swing.JFrame {
     private void serchFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_serchFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_serchFieldActionPerformed
-
-    private void serchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_serchButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_serchButtonActionPerformed
 
     private void dataFeildActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dataFeildActionPerformed
         // TODO add your handling code here:
@@ -160,7 +147,10 @@ public class AccountSetting extends javax.swing.JFrame {
     private javax.swing.JLabel Serch;
     private javax.swing.JTextField dataFeild;
     private javax.swing.JLabel editProfile;
-    private javax.swing.JButton serchButton;
     private javax.swing.JTextField serchField;
     // End of variables declaration//GEN-END:variables
+
+    private void setIcon() {
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("AccountSetting.png")));
+    }
 }

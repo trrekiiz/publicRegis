@@ -37,7 +37,9 @@ public class AccountSetting extends javax.swing.JFrame {
         dataFeild = new javax.swing.JTextField();
         editProfile = new javax.swing.JLabel();
         profilePicture = new javax.swing.JLabel();
-        profileFeild = new javax.swing.JLabel();
+        editProfileDataField = new javax.swing.JPanel();
+        profileData = new javax.swing.JLabel();
+        profileHealthData = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Account Setting");
@@ -69,27 +71,57 @@ public class AccountSetting extends javax.swing.JFrame {
         profilePicture.setForeground(new java.awt.Color(255, 255, 255));
         profilePicture.setText("Profile Picture");
 
+        profileData.setFont(new java.awt.Font("ThaiSans Neue", 0, 24)); // NOI18N
+        profileData.setText("ข้อมูลส่วนบุคคล");
+
+        profileHealthData.setFont(new java.awt.Font("ThaiSans Neue", 0, 24)); // NOI18N
+        profileHealthData.setText("ข้อมูลด้านสุขภาพ");
+
+        javax.swing.GroupLayout editProfileDataFieldLayout = new javax.swing.GroupLayout(editProfileDataField);
+        editProfileDataField.setLayout(editProfileDataFieldLayout);
+        editProfileDataFieldLayout.setHorizontalGroup(
+            editProfileDataFieldLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(editProfileDataFieldLayout.createSequentialGroup()
+                .addGap(55, 55, 55)
+                .addComponent(profileData, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(89, 89, 89)
+                .addComponent(profileHealthData, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(148, Short.MAX_VALUE))
+        );
+        editProfileDataFieldLayout.setVerticalGroup(
+            editProfileDataFieldLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(editProfileDataFieldLayout.createSequentialGroup()
+                .addGroup(editProfileDataFieldLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(profileData, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(profileHealthData, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 383, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(editProfile, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(362, 362, 362))
             .addGroup(layout.createSequentialGroup()
                 .addGap(295, 295, 295)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(profileFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 555, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Serch)
-                    .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(editProfileDataField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 144, Short.MAX_VALUE)
+                        .addComponent(editProfile, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(362, 362, 362))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(dataFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(serchField, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addComponent(profilePicture, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(174, Short.MAX_VALUE))
+                            .addComponent(Serch)
+                            .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(dataFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(serchField, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addComponent(profilePicture, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -108,8 +140,8 @@ public class AccountSetting extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(editProfile, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(profileFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 366, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 112, Short.MAX_VALUE))
+                .addComponent(editProfileDataField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 59, Short.MAX_VALUE))
         );
 
         pack();
@@ -163,7 +195,9 @@ public class AccountSetting extends javax.swing.JFrame {
     private javax.swing.JLabel Serch;
     private javax.swing.JTextField dataFeild;
     private javax.swing.JLabel editProfile;
-    private javax.swing.JLabel profileFeild;
+    private javax.swing.JPanel editProfileDataField;
+    private javax.swing.JLabel profileData;
+    private javax.swing.JLabel profileHealthData;
     private javax.swing.JLabel profilePicture;
     private javax.swing.JTextField serchField;
     // End of variables declaration//GEN-END:variables

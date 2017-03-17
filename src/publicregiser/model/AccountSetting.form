@@ -28,27 +28,34 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Component id="editProfile" min="-2" pref="223" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="362" max="-2" attributes="0"/>
-          </Group>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="295" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="profileFeild" min="-2" pref="555" max="-2" attributes="0"/>
-                  <Component id="Serch" min="-2" max="-2" attributes="0"/>
-                  <Component id="Logo" alignment="0" min="-2" pref="313" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="editProfileDataField" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="0" pref="144" max="32767" attributes="0"/>
+                      <Component id="editProfile" min="-2" pref="223" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="362" max="-2" attributes="0"/>
+                  </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="dataFeild" alignment="0" min="-2" pref="291" max="-2" attributes="0"/>
-                          <Component id="serchField" alignment="0" min="-2" pref="172" max="-2" attributes="0"/>
+                          <Component id="Serch" min="-2" max="-2" attributes="0"/>
+                          <Component id="Logo" alignment="0" min="-2" pref="313" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="dataFeild" alignment="0" min="-2" pref="291" max="-2" attributes="0"/>
+                                  <Component id="serchField" alignment="0" min="-2" pref="172" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="profilePicture" min="-2" pref="125" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="profilePicture" min="-2" pref="125" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="174" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -71,8 +78,8 @@
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="editProfile" min="-2" pref="45" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="profileFeild" min="-2" pref="366" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="112" max="32767" attributes="0"/>
+              <Component id="editProfileDataField" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="59" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -125,7 +132,50 @@
         <Property name="text" type="java.lang.String" value="Profile Picture"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="profileFeild">
-    </Component>
+    <Container class="javax.swing.JPanel" name="editProfileDataField">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="55" pref="55" max="-2" attributes="0"/>
+                  <Component id="profileData" min="-2" pref="137" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="89" max="-2" attributes="0"/>
+                  <Component id="profileHealthData" min="-2" pref="137" max="-2" attributes="0"/>
+                  <EmptySpace pref="148" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="profileData" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                      <Component id="profileHealthData" alignment="3" min="-2" pref="36" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="0" pref="383" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="profileData">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="ThaiSans Neue" size="24" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&#xe02;&#xe49;&#xe2d;&#xe21;&#xe39;&#xe25;&#xe2a;&#xe48;&#xe27;&#xe19;&#xe1a;&#xe38;&#xe04;&#xe04;&#xe25;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="profileHealthData">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="ThaiSans Neue" size="24" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="&#xe02;&#xe49;&#xe2d;&#xe21;&#xe39;&#xe25;&#xe14;&#xe49;&#xe32;&#xe19;&#xe2a;&#xe38;&#xe02;&#xe20;&#xe32;&#xe1e;"/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>

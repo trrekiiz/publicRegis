@@ -41,6 +41,7 @@ public class AccountSetting extends javax.swing.JFrame {
         setTitle("Account Setting");
         setMaximumSize(new java.awt.Dimension(1024, 768));
         setMinimumSize(new java.awt.Dimension(1024, 768));
+        setResizable(false);
 
         Logo.setFont(new java.awt.Font("ThaiSans Neue", 0, 52)); // NOI18N
         Logo.setText("KMUTT Regis Club");

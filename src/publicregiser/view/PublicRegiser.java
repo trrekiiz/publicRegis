@@ -41,6 +41,7 @@ public class PublicRegiser {
         //</editor-fold>
 
         /* Create and display the form */
+        // Run Account Setting
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new AccountSetting().setVisible(true);

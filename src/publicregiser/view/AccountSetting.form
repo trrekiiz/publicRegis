@@ -31,37 +31,43 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="295" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="dataFeild" min="-2" pref="210" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="Serch" alignment="0" max="32767" attributes="0"/>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="serchField" min="-2" pref="161" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Component id="serchButton" pref="0" max="32767" attributes="0"/>
-                      </Group>
-                      <Component id="Logo" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="dataFeild" min="-2" pref="291" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="serchField" min="-2" pref="172" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="serchButton" min="-2" pref="58" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="Serch" min="-2" max="-2" attributes="0"/>
+                  <Component id="Logo" alignment="0" min="-2" pref="313" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="802" max="32767" attributes="0"/>
+              <EmptySpace pref="416" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="editProfile" min="-2" pref="223" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="362" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
               <Component id="Logo" min="-2" pref="44" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
               <Component id="Serch" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="serchField" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="serchButton" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="dataFeild" min="-2" pref="113" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="552" max="32767" attributes="0"/>
+              <Component id="dataFeild" min="-2" pref="96" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="editProfile" min="-2" pref="45" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="490" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -70,7 +76,7 @@
     <Component class="javax.swing.JLabel" name="Logo">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="ThaiSans Neue" size="24" style="0"/>
+          <Font name="ThaiSans Neue" size="52" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="KMUTT Regis Club"/>
       </Properties>
@@ -102,6 +108,14 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dataFeildActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="editProfile">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="ThaiSans Neue" size="36" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="&#xe41;&#xe01;&#xe49;&#xe44;&#xe02;&#xe02;&#xe49;&#xe2d;&#xe21;&#xe39;&#xe25;&#xe2a;&#xe48;&#xe27;&#xe19;&#xe15;&#xe31;&#xe27;"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

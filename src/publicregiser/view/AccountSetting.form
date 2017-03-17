@@ -34,12 +34,18 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="295" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="dataFeild" min="-2" pref="291" max="-2" attributes="0"/>
-                  <Component id="serchField" min="-2" pref="172" max="-2" attributes="0"/>
                   <Component id="Serch" min="-2" max="-2" attributes="0"/>
                   <Component id="Logo" alignment="0" min="-2" pref="313" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="dataFeild" alignment="0" min="-2" pref="291" max="-2" attributes="0"/>
+                          <Component id="serchField" alignment="0" min="-2" pref="172" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="profilePicture" min="-2" pref="125" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="416" max="32767" attributes="0"/>
+              <EmptySpace pref="295" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
@@ -55,13 +61,18 @@
               <Component id="Logo" min="-2" pref="44" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
               <Component id="Serch" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="serchField" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="dataFeild" min="-2" pref="96" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="serchField" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="dataFeild" min="-2" pref="96" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="profilePicture" max="32767" attributes="0"/>
+              </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="editProfile" min="-2" pref="45" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="490" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="485" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -101,6 +112,11 @@
           <Font name="ThaiSans Neue" size="36" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="&#xe41;&#xe01;&#xe49;&#xe44;&#xe02;&#xe02;&#xe49;&#xe2d;&#xe21;&#xe39;&#xe25;&#xe2a;&#xe48;&#xe27;&#xe19;&#xe15;&#xe31;&#xe27;"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="profilePicture">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Profile Picture"/>
       </Properties>
     </Component>
   </SubComponents>

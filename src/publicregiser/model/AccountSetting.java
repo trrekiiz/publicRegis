@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package publicregiser.view;
+package publicregiser.model;
 
 import java.awt.Toolkit;
 import sun.awt.image.ToolkitImage;
@@ -37,11 +37,10 @@ public class AccountSetting extends javax.swing.JFrame {
         dataFeild = new javax.swing.JTextField();
         editProfile = new javax.swing.JLabel();
         profilePicture = new javax.swing.JLabel();
-        profileFeild = new javax.swing.JLabel();
+        editProfileFeild = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Account Setting");
-        setMaximumSize(new java.awt.Dimension(1024, 768));
         setMinimumSize(new java.awt.Dimension(1024, 768));
         setResizable(false);
 
@@ -81,7 +80,7 @@ public class AccountSetting extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(295, 295, 295)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(profileFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 555, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(editProfileFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 555, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Serch)
                     .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
@@ -109,7 +108,7 @@ public class AccountSetting extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(editProfile, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(profileFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 366, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(editProfileFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 366, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 112, Short.MAX_VALUE))
         );
 
@@ -164,7 +163,7 @@ public class AccountSetting extends javax.swing.JFrame {
     private javax.swing.JLabel Serch;
     private javax.swing.JTextField dataFeild;
     private javax.swing.JLabel editProfile;
-    private javax.swing.JLabel profileFeild;
+    private javax.swing.JLabel editProfileFeild;
     private javax.swing.JLabel profilePicture;
     private javax.swing.JTextField serchField;
     // End of variables declaration//GEN-END:variables

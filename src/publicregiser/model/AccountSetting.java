@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package publicregiser.view;
+package publicregiser.model;
 
 import java.awt.Toolkit;
 import sun.awt.image.ToolkitImage;
@@ -41,7 +41,6 @@ public class AccountSetting extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Account Setting");
-        setMaximumSize(new java.awt.Dimension(1024, 768));
         setMinimumSize(new java.awt.Dimension(1024, 768));
         setResizable(false);
 

@@ -37,6 +37,7 @@ public class AccountSetting extends javax.swing.JFrame {
         dataFeild = new javax.swing.JTextField();
         editProfile = new javax.swing.JLabel();
         profilePicture = new javax.swing.JLabel();
+        profileFeild = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Account Setting");
@@ -68,15 +69,19 @@ public class AccountSetting extends javax.swing.JFrame {
         profilePicture.setBackground(new java.awt.Color(0, 0, 0));
         profilePicture.setForeground(new java.awt.Color(255, 255, 255));
         profilePicture.setText("Profile Picture");
-        profilePicture.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(editProfile, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(362, 362, 362))
             .addGroup(layout.createSequentialGroup()
                 .addGap(295, 295, 295)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(profileFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 555, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Serch)
                     .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
@@ -85,11 +90,7 @@ public class AccountSetting extends javax.swing.JFrame {
                             .addComponent(serchField, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(profilePicture, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(295, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(editProfile, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(362, 362, 362))
+                .addContainerGap(174, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -107,7 +108,9 @@ public class AccountSetting extends javax.swing.JFrame {
                     .addComponent(profilePicture, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addComponent(editProfile, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 485, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(profileFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 366, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 112, Short.MAX_VALUE))
         );
 
         pack();
@@ -161,11 +164,12 @@ public class AccountSetting extends javax.swing.JFrame {
     private javax.swing.JLabel Serch;
     private javax.swing.JTextField dataFeild;
     private javax.swing.JLabel editProfile;
+    private javax.swing.JLabel profileFeild;
     private javax.swing.JLabel profilePicture;
     private javax.swing.JTextField serchField;
     // End of variables declaration//GEN-END:variables
 
     private void setIcon() {
-        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("AccountSetting.png")));
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/Image/AccountSetting.png")));
     }
 }

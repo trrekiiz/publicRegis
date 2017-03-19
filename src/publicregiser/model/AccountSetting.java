@@ -67,7 +67,7 @@ public class AccountSetting extends javax.swing.JFrame {
         editProfile.setFont(new java.awt.Font("ThaiSans Neue", 0, 36)); // NOI18N
         editProfile.setText("แก้ไขข้อมูลส่วนตัว");
 
-        profilePicture.setBackground(new java.awt.Color(0, 0, 0));
+        profilePicture.setBackground(new java.awt.Color(255, 0, 0));
         profilePicture.setForeground(new java.awt.Color(255, 255, 255));
         profilePicture.setText("Profile Picture");
 

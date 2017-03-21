@@ -30,12 +30,19 @@ public class CheckAllActivity extends javax.swing.JFrame {
         Logo = new javax.swing.JLabel();
         Serch = new javax.swing.JLabel();
         serchField = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
+        name = new javax.swing.JPanel();
+        faculty = new javax.swing.JPanel();
+        profileEditField = new javax.swing.JLabel();
+        clubRegistered = new javax.swing.JLabel();
+        clubRegisteredShow = new javax.swing.JPanel();
+        clubContact = new javax.swing.JButton();
+        discoverEvent = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Check All Activity");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setMaximumSize(new java.awt.Dimension(1024, 768));
-        setPreferredSize(new java.awt.Dimension(1024, 768));
         setResizable(false);
 
         Logo.setFont(new java.awt.Font("ThaiSans Neue", 0, 52)); // NOI18N
@@ -49,6 +56,115 @@ public class CheckAllActivity extends javax.swing.JFrame {
             }
         });
 
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout nameLayout = new javax.swing.GroupLayout(name);
+        name.setLayout(nameLayout);
+        nameLayout.setHorizontalGroup(
+            nameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 312, Short.MAX_VALUE)
+        );
+        nameLayout.setVerticalGroup(
+            nameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 61, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout facultyLayout = new javax.swing.GroupLayout(faculty);
+        faculty.setLayout(facultyLayout);
+        facultyLayout.setHorizontalGroup(
+            facultyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 388, Short.MAX_VALUE)
+        );
+        facultyLayout.setVerticalGroup(
+            facultyLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 101, Short.MAX_VALUE)
+        );
+
+        profileEditField.setFont(new java.awt.Font("ThaiSans Neue", 0, 36)); // NOI18N
+        profileEditField.setText("แก้ไขข้อมูลส่วนตัว");
+
+        clubRegistered.setFont(new java.awt.Font("ThaiSans Neue", 0, 24)); // NOI18N
+        clubRegistered.setText("ลงทะเบียนชมรมแล้ว");
+
+        clubContact.setFont(new java.awt.Font("ThaiSans Neue", 0, 18)); // NOI18N
+        clubContact.setText("ติดต่อชมรม");
+        clubContact.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clubContactActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout clubRegisteredShowLayout = new javax.swing.GroupLayout(clubRegisteredShow);
+        clubRegisteredShow.setLayout(clubRegisteredShowLayout);
+        clubRegisteredShowLayout.setHorizontalGroup(
+            clubRegisteredShowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(clubRegisteredShowLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(clubContact, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        clubRegisteredShowLayout.setVerticalGroup(
+            clubRegisteredShowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, clubRegisteredShowLayout.createSequentialGroup()
+                .addContainerGap(112, Short.MAX_VALUE)
+                .addComponent(clubContact)
+                .addGap(93, 93, 93))
+        );
+
+        discoverEvent.setFont(new java.awt.Font("ThaiSans Neue", 0, 18)); // NOI18N
+        discoverEvent.setText("Discover Event");
+        discoverEvent.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                discoverEventActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(141, 141, 141)
+                        .addComponent(name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(117, 117, 117)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(clubRegistered, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(faculty, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                    .addComponent(profileEditField, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(81, 81, 81))))))
+                .addContainerGap(106, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(clubRegisteredShow, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(discoverEvent, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(247, 247, 247))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(faculty, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(profileEditField, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(3, 3, 3)
+                .addComponent(clubRegistered, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(clubRegisteredShow, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(discoverEvent)
+                .addContainerGap(201, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -56,10 +172,11 @@ public class CheckAllActivity extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(189, 189, 189)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Serch)
                     .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(serchField, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(522, Short.MAX_VALUE))
+                .addContainerGap(224, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -70,7 +187,9 @@ public class CheckAllActivity extends javax.swing.JFrame {
                 .addComponent(Serch)
                 .addGap(18, 18, 18)
                 .addComponent(serchField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(654, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -79,6 +198,14 @@ public class CheckAllActivity extends javax.swing.JFrame {
     private void serchFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_serchFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_serchFieldActionPerformed
+
+    private void clubContactActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clubContactActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_clubContactActionPerformed
+
+    private void discoverEventActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_discoverEventActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_discoverEventActionPerformed
 
     /**
      * @param args the command line arguments
@@ -118,6 +245,14 @@ public class CheckAllActivity extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Logo;
     private javax.swing.JLabel Serch;
+    private javax.swing.JButton clubContact;
+    private javax.swing.JLabel clubRegistered;
+    private javax.swing.JPanel clubRegisteredShow;
+    private javax.swing.JButton discoverEvent;
+    private javax.swing.JPanel faculty;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel name;
+    private javax.swing.JLabel profileEditField;
     private javax.swing.JTextField serchField;
     // End of variables declaration//GEN-END:variables
 }

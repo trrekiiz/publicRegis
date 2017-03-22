@@ -31,129 +31,29 @@ public class AccountSetting extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Logo = new javax.swing.JLabel();
-        Serch = new javax.swing.JLabel();
-        serchField = new javax.swing.JTextField();
-        dataFeild = new javax.swing.JTextField();
-        editProfile = new javax.swing.JLabel();
-        profilePicture = new javax.swing.JLabel();
-        editProfileDataField = new javax.swing.JPanel();
-        profileData = new javax.swing.JLabel();
-        profileHealthData = new javax.swing.JLabel();
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Account Setting");
+        setBackground(new java.awt.Color(255, 51, 0));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setMaximumSize(new java.awt.Dimension(1024, 768));
         setMinimumSize(new java.awt.Dimension(1024, 768));
+        setPreferredSize(new java.awt.Dimension(1024, 768));
         setResizable(false);
-
-        Logo.setFont(new java.awt.Font("ThaiSans Neue", 0, 52)); // NOI18N
-        Logo.setText("KMUTT Regis Club");
-
-        Serch.setText("Serch form event name or location");
-
-        serchField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                serchFieldActionPerformed(evt);
-            }
-        });
-
-        dataFeild.setMinimumSize(new java.awt.Dimension(1024, 768));
-        dataFeild.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                dataFeildActionPerformed(evt);
-            }
-        });
-
-        editProfile.setFont(new java.awt.Font("ThaiSans Neue", 0, 36)); // NOI18N
-        editProfile.setText("แก้ไขข้อมูลส่วนตัว");
-
-        profilePicture.setBackground(new java.awt.Color(255, 0, 0));
-        profilePicture.setForeground(new java.awt.Color(255, 255, 255));
-        profilePicture.setText("Profile Picture");
-
-        profileData.setFont(new java.awt.Font("ThaiSans Neue", 0, 24)); // NOI18N
-        profileData.setText("ข้อมูลส่วนบุคคล");
-
-        profileHealthData.setFont(new java.awt.Font("ThaiSans Neue", 0, 24)); // NOI18N
-        profileHealthData.setText("ข้อมูลด้านสุขภาพ");
-
-        javax.swing.GroupLayout editProfileDataFieldLayout = new javax.swing.GroupLayout(editProfileDataField);
-        editProfileDataField.setLayout(editProfileDataFieldLayout);
-        editProfileDataFieldLayout.setHorizontalGroup(
-            editProfileDataFieldLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(editProfileDataFieldLayout.createSequentialGroup()
-                .addGap(55, 55, 55)
-                .addComponent(profileData, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(89, 89, 89)
-                .addComponent(profileHealthData, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(148, Short.MAX_VALUE))
-        );
-        editProfileDataFieldLayout.setVerticalGroup(
-            editProfileDataFieldLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(editProfileDataFieldLayout.createSequentialGroup()
-                .addGroup(editProfileDataFieldLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(profileData, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(profileHealthData, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 383, Short.MAX_VALUE))
-        );
+        setSize(new java.awt.Dimension(1024, 768));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(295, 295, 295)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(editProfileDataField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 144, Short.MAX_VALUE)
-                        .addComponent(editProfile, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(362, 362, 362))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Serch)
-                            .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 313, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(dataFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(serchField, javax.swing.GroupLayout.PREFERRED_SIZE, 172, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addComponent(profilePicture, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGap(0, 1024, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(Logo, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1, 1, 1)
-                .addComponent(Serch)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(serchField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(dataFeild, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(profilePicture, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addComponent(editProfile, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(editProfileDataField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 59, Short.MAX_VALUE))
+            .addGap(0, 768, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void serchFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_serchFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_serchFieldActionPerformed
-
-    private void dataFeildActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dataFeildActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_dataFeildActionPerformed
 
     /**
      * @param args the command line arguments
@@ -191,15 +91,6 @@ public class AccountSetting extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Logo;
-    private javax.swing.JLabel Serch;
-    private javax.swing.JTextField dataFeild;
-    private javax.swing.JLabel editProfile;
-    private javax.swing.JPanel editProfileDataField;
-    private javax.swing.JLabel profileData;
-    private javax.swing.JLabel profileHealthData;
-    private javax.swing.JLabel profilePicture;
-    private javax.swing.JTextField serchField;
     // End of variables declaration//GEN-END:variables
 
     private void setIcon() {
